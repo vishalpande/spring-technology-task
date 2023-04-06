@@ -1,0 +1,36 @@
+
+body{
+    background-color:#fcfcfc
+}
+.row{
+    display:flex;
+    justify-content:center;
+    margin: 10px;
+}
+
+.block{
+    height:50px;
+    width: 50%;
+    margin:5px;
+    border-radius: 5px;
+    box-shadow:2px 2px 5px rgba(0,0,0,0.3)
+}
+ .red{
+    background-color:#ff5733;
+
+}
+.blue{
+    background-color:  #33a6ff;
+}
+    .green{
+        background-color:  #33FF5F;
+    }
+    .yellow{
+        background-color:  #c6c615;
+    }
+    .purple{
+        background-color:  #a81d88;
+    }
+    .orange{
+        background-color:  #FF8833;
+    }

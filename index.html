@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="row">
+<div class="block red" onclick="changeBackground('#FF5733')" ></div>
+<div class="block blue"onclick="changeBackground(' #33a6ff')"></div>
+<div class="block green" onclick="changeBackground('  #33FF5F')"></div>
+</div>
+<div class="row">
+<div class=" block yellow " onclick="changeBackground('#c6c615')"></div>
+<div class="block  purple" onclick="changeBackground('#a81d88')"></div>
+<div class="block orange" onclick="changeBackground('#FF8833') "</div>
+</div>
+    
+
+
+<script>
+function changeBackground(color){
+    document.body.style.backgroundColor=color;
+    localStorage.setItem('current_color',color)
+}
+
+window.onload=function(){
+var currentcolor=localStorage.getItem('current_color')
+if(currentcolor){
+    document.body.style.backgroundColor=currentcolor;
+}
+}
+
+
+</script>
+</body>
+</html>
